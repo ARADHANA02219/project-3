@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Student Management CRUD</h2>
+            
+            <div class="input-box">
+                
+                <input type="text" id="student-name" placeholder="Name" >
+            </div>
+                   
+            <span class="input-box">
+                
+                <input type="text" id="email" placeholder="Email">
+            </span>
+        
+            <span class="input-box">
+                
+                <input type="text" id="age" placeholder="Age">
+            </span>
+        
+            <div class="input-box">
+                
+                <input type="text" id="gpa" placeholder="GPA">
+            </div>
+            <div class="input-box">
+               
+                <input type="text" id="degree" placeholder="Degree">
+            </div>
+            <button id="btn">Add Student</button>
+        </div>
+
+        <div class="search">
+               
+            <input type="text" id="search" placeholder="Search By Name,email or degree" onkeyup="searchFun()">
+        </div>
+
+    
+
+        <div class="table" id="books">
+            <table>
+              <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Student Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Age
+                    </th>
+                    <th>
+                        GPA
+                    </th>
+                    
+                    <th>
+                        Degree
+                    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                    <td>table row 1</td>
+                </tr> -->
+              </tbody>
+            </table>
+        </div>
+        <script src="./index.js"></script>
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+</body>
+</html>
